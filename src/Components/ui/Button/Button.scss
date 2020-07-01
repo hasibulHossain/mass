@@ -1,0 +1,23 @@
+.btn {
+   color: var(--font-clr);
+   font-family: 'Public Sans';
+   font-weight: 700;
+   font-size: 1.1rem;
+   text-transform: uppercase;
+   letter-spacing: 0.1rem;
+   background: none;
+   outline: none;
+   padding: 1.8rem 5.3rem;
+   border-radius: 50px;
+   cursor: pointer;
+}
+
+.btn.btn-thin {
+   border: 1px solid var(--border-clr);
+}
+
+.btn.btn-fill {
+   border: none;
+   color: white;
+   background-color: var(--dark-clr);
+}

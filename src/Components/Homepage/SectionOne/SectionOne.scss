@@ -1,0 +1,86 @@
+@import '../../../styles/utility/typography.scss';
+
+.exclusive_collection {
+   margin-top: var(--section-margin-top);
+   margin-bottom: var(--section-margin-top);
+
+   &__container {
+   }
+
+   &__container-inner {
+      background-color: var(--main-clr);
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+   }
+
+   &__container-inner > div {
+      flex: 0 1 50%;
+   } 
+
+   &__left {
+
+      & > div {
+         background-color: #707070;
+         width: 76%;
+         height: 60rem;
+         overflow: hidden;
+      }
+
+   }
+
+   &__left-photo {
+      width: 100%;
+      height: auto;
+   }
+
+   &__right {
+      position: relative;
+
+      & > div:nth-child(2) {
+         width: 60%;
+         height: 48rem;
+         background-color: var(--dark-clr);
+         overflow: hidden;
+      }
+
+      & > div:last-child {
+         transform: rotate(-90deg);
+         position: absolute;
+         top: 66.5%;
+         right: -7%;
+         text-transform: uppercase;
+         text-align: center;
+         font-size: var(--font-normal);
+
+         & > p:first-child {
+            font-weight: 500;
+            font-size: 1rem;
+            letter-spacing: 1px;
+         }
+
+         & > p:last-child {
+            padding-top: 1rem;
+            font-weight: 700;
+         }
+      }
+
+   }
+
+   &__right-photo {
+      width: 100%;
+      height: auto;
+   }
+
+   &__right-para {
+      margin-top: 2rem;
+      
+      @include textformat;
+      
+      & > p:not(:first-child) {
+         margin-top: 2rem;
+         margin-bottom: 12rem;
+      }
+   }
+
+}

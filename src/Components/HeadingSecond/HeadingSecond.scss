@@ -1,0 +1,18 @@
+.heading-second {
+   font-size: var(--heading-second);
+   font-family: var(--font-serif);
+   text-transform: capitalize;
+   padding-right: 15rem;
+   margin-bottom: 11rem;
+   position: relative;
+
+   &::after {
+      content: " ";
+      display: inline-block;
+      width: 108px;
+      position: absolute;
+      top: 120%;
+      left: 0%;
+      border-bottom: 1px solid var(--dark-clr);
+   }
+}

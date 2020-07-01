@@ -1,0 +1,7 @@
+@mixin textformat {
+   color: var(--font-clr-lite);
+   font-size: var(--font-15);
+   font-weight: 400;
+   word-spacing: 2px;
+   line-height: 2.3rem;
+}

@@ -1,0 +1,47 @@
+// initial global setup
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit;
+}
+
+*:focus {
+   outline: none;
+   border: none;
+}
+
+*::before,
+*::after {
+   box-sizing: inherit;
+}
+
+.row {
+   max-width: 114rem;
+   margin: 0 auto;
+}
+
+html {
+   box-sizing: border-box;
+   font-size: 62.5%;
+}
+
+@font-face {
+   font-family: 'Cirka';
+   src: url(/src/fonts/Cirka-Bold.woff);
+   font-style: normal;
+   font-weight: 700;
+}
+
+@font-face {
+   font-family: 'Cirka';
+   src: url(/src/fonts/Cirka-Light.otf);
+   font-style: normal;
+   font-weight: 400;
+}
+
+body {
+   @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap');
+   font-family: 'Public Sans', sans-serif;
+   color: var(--font-clr);
+   font-weight: 400;
+}
