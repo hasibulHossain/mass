@@ -11,7 +11,7 @@ function HomePage() {
          <HeroSection />
          <SectionOne />
          <FollowInsta />
-         <SectionThree />
+         <SectionThree showBtn heading="Style Feeds" />
       </>
    )
 }

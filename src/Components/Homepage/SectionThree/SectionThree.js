@@ -16,45 +16,45 @@ const imgsArr = [
       src: slideOne,
       alt: 'girl wear skirt',
       titleFirst: 'editor picks',
-      titleSecond: 'Best Of New In &#58; Slip Skirts &#38; Zebra'
+      titleSecond: 'Best Of New In : Slip Skirts & Zebra'
    },
    {
       src: '//source.unsplash.com/zmfjDzJGTOo/640x958',
       alt: 'girl wear skirt',
       titleFirst: 'inspiration',
-      titleSecond: 'Best Of New In &#58; Slip Skirts &#38; Zebra'
+      titleSecond: 'Best Of New In : Slip Skirts & Zebra'
    },
    {
       src: slideThree,
       alt: 'girl wear skirt',
       titleFirst: 'inspiration',
-      titleSecond: 'Best Of New In &amp; Slip Skirts &#38; Zebra'
+      titleSecond: 'Best Of New In : Slip Skirts & Zebra'
    },
    {
       src: slideTwo,
       alt: 'girl wear skirt',
       titleFirst: 'inspiration',
-      titleSecond: 'Best Of New In &amp; Slip Skirts &#38; Zebra'
+      titleSecond: 'Best Of New In : Slip Skirts & Zebra'
    },
    {
       src: slideOne,
       alt: 'girl wear skirt',
       titleFirst: 'inspiration',
-      titleSecond: 'Best Of New In &#58; Slip Skirts &#38; Zebra'
+      titleSecond: 'Best Of New In : Slip Skirts & Zebra'
    },
 ]
 
-function SectionThree() {
+function SectionThree({showBtn, heading}) {
    return (
       <section className="style-feeds">
          <div className="row">
             <div className="style-feeds__heading">
                <div>
-                  <HeadingSecond pBottom="1rem">Style Feeds</HeadingSecond> 
+                  <HeadingSecond pBottom="1rem">{heading}</HeadingSecond> 
                </div>
-               <div>
-                  <Button class="btn-fill">all articles</Button>
-               </div>
+               {
+                showBtn &&  <div><Button class="btn-fill">all articles</Button></div>
+               }
             </div>
             <div className="style-feeds__gallery-photos">
                <Slider csName="style-feeds__gallery-photos-inner" translateWidth="-35">
@@ -68,7 +68,7 @@ function SectionThree() {
                                  </div>
                                  <div className="style-feeds__gallery-content">
                                     <p>{titleFirst}</p>
-                                    <p>{titleSecond}</p>
+                                    <p>{convertHTML(titleSecond)}</p>
                                  </div>
                               </div>
                            </React.Fragment>
@@ -82,4 +82,9 @@ function SectionThree() {
    )
 }
 
+//convert special character into html entities
+function convertHTML(str) {
+   const conversions = {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&apos;'}
+   return str.replace(/[&<>"']/g, find => conversions[find]);
+}
 export default SectionThree

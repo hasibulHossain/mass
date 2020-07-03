@@ -1,4 +1,5 @@
 import React from 'react';
+import './ProductPage.scss'
 
 //components
 import NewIn from '../../Components/Homepage/SectionThree/SectionThree';
@@ -8,7 +9,9 @@ import FollowInsta from '../../Components/FollowInsta/FollowInsta';
 function ProductPage() {
    return (
       <>
-         <NewIn />
+         <div className="section-first" >
+            <NewIn heading="new in" />
+         </div>
          <BestSelling />
          <FollowInsta />
       </>   

@@ -8,27 +8,40 @@ import Button from '../../ui/Button/Button';
 import { 
    photo1,
    photo2,
-   photo3,
-   photo4,
-   photo5,
-   photo6,
-   photo7,
-   photo8,
-   photo9,
-   photo10
+   photo7
 } from './imgSrc.js';
 
 const imgsArr = [
-   photo1,
-   photo2,
-   photo3,
-   photo4,
-   photo5,
-   photo6,
-   photo7,
-   photo8,
-   photo9,
-   photo10
+   {
+      src: photo1
+   },
+   {
+      src: photo2
+   },
+   {
+      src: '//source.unsplash.com/ehdI_89nzMo/640x958'
+   },
+   {
+      src: '//source.unsplash.com/pUY4bhUYnK4/640x958'
+   },
+   {
+      src: '//source.unsplash.com/TDOClniEwmI/640x958'
+   },
+   {
+      src: '//source.unsplash.com/eC6fllGoKNs/640x958'
+   },
+   {
+      src: photo7
+   },
+   {
+      src: '//source.unsplash.com/_rWF1DVWkUs/640x958'
+   },
+   {
+      src: '//source.unsplash.com/eC6fllGoKNs/640x958'
+   },
+   {
+      src: '//source.unsplash.com/_rWF1DVWkUs/640x958'
+   },
 ];
 
 function BestSelling() {
@@ -37,13 +50,13 @@ function BestSelling() {
          <div className="row">
             <div className="Best-selling__gallery">
                {
-                  imgsArr.map((photo, i) => {
+                  imgsArr.map(({src}, i) => {
                      return (
                         <div key={i} className="Best-selling__gallery-box">
                            <div className="Best-selling__gallery-photo-box">
-                              <img src={photo} alt="gallery items" />
+                              <img src={src} alt="gallery items" />
                            </div>
-                           <div className="Best-selling__gallery-content-box">
+                           <div className="Best-selling__gallery-content-box ">
                               <p>editor picks</p>
                               <p>Best Of New In &#58; Slip Skirts &#38; Zebra</p>
                               <p>&#36; 49.99</p>
@@ -53,7 +66,9 @@ function BestSelling() {
                   })
                }
             </div>
-            <Button class="btn-thin">shop now</Button>
+            <div className="Best-selling__btn">
+               <Button class="btn-thin">shop now</Button>
+            </div>
          </div>
       </section>
    )
