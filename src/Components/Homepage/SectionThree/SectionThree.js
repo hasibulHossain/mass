@@ -19,7 +19,7 @@ const imgsArr = [
       titleSecond: 'Best Of New In &#58; Slip Skirts &#38; Zebra'
    },
    {
-      src: slideTwo,
+      src: '//source.unsplash.com/zmfjDzJGTOo/640x958',
       alt: 'girl wear skirt',
       titleFirst: 'inspiration',
       titleSecond: 'Best Of New In &#58; Slip Skirts &#38; Zebra'
@@ -28,13 +28,13 @@ const imgsArr = [
       src: slideThree,
       alt: 'girl wear skirt',
       titleFirst: 'inspiration',
-      titleSecond: 'Best Of New In &#58; Slip Skirts &#38; Zebra'
+      titleSecond: 'Best Of New In &amp; Slip Skirts &#38; Zebra'
    },
    {
       src: slideTwo,
       alt: 'girl wear skirt',
       titleFirst: 'inspiration',
-      titleSecond: 'Best Of New In &#58; Slip Skirts &#38; Zebra'
+      titleSecond: 'Best Of New In &amp; Slip Skirts &#38; Zebra'
    },
    {
       src: slideOne,

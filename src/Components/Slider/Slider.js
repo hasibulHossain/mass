@@ -21,7 +21,7 @@ function Slider({children, csName, translateWidth}) {
       setDirection(-1)
    }
    const slideLeft = () => {
-      if(width == 0) return;
+      if(width === 0) return;
       arrowBtnL.style.opacity = '0';
       setCounter(counter - 1)
       setWidth(0)
