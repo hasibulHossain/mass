@@ -9,10 +9,11 @@
    }
 
    &__gallery-box {
-      margin-right: 5rem;
+      padding: 0 2.5rem;
       margin-bottom: 5rem;
 
       &:first-child {
+         padding: 0 2.5 0 0;
          grid-column: 1 / 3;
       }
 

@@ -1,7 +1,35 @@
 import * as actionTypes from './actionTypes';
 
-export const toggleSideNav = () => {
+export const openSideNav = () => {
    return {
       type: actionTypes.SIDENAV_ACTIVE
+   }
+}
+export const closeSideNav = () => {
+   return {
+      type: actionTypes.SIDENAV_HIDE
+   }
+}
+
+export const toggleModal = () => {
+   return {
+      type: actionTypes.MODAL_OPEN
+   }
+}
+
+
+
+const alert = () => {
+
+   return {
+      type: actionTypes.ALERT
+   }
+}
+
+export const alertAsync = () => {
+   return dispatch => {
+      setTimeout(() => {
+         dispatch(alert())
+      }, 5000);
    }
 }

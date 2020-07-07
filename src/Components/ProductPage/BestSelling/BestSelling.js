@@ -7,7 +7,6 @@ import Button from '../../ui/Button/Button';
 //Assets
 import { 
    photo1,
-   photo2,
    photo7
 } from './imgSrc.js';
 
@@ -16,7 +15,7 @@ const imgsArr = [
       src: photo1
    },
    {
-      src: photo2
+      src: '//source.unsplash.com/eC6fllGoKNs/640x958'
    },
    {
       src: '//source.unsplash.com/ehdI_89nzMo/640x958'

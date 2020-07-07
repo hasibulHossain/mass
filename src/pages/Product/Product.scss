@@ -1,0 +1,149 @@
+@import '../../styles/utility/typography.scss';
+
+.Product-des {
+   $self: &;
+   height: 100%;
+   margin-bottom: var(--section-margin-top);
+
+   &__inner {
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__content {
+      flex: 1 0 65%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   &__content-left {
+      width: 60%;
+      padding-left: 16%;
+
+      #{$self}__content-left-heading {
+
+         & > span:first-of-type {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            display: inherit;
+         }
+
+         & > span:last-of-type {
+            display: inherit;
+            font-weight: 500;
+            text-transform: capitalize;
+            font-size: 1.2rem;
+            margin-top: 1rem;
+         }
+
+         & > h3 {
+            font-family: 'Cirka';
+            font-size: 5rem;
+            text-transform: capitalize;
+         }
+      }
+
+      #{$self}__line {
+         display: inline-block;
+         width: 50%;
+         border-bottom: 1px solid var(--dark-clr);
+         margin: 5rem 0rem;
+      }
+
+      #{$self}__content-left-bottom {
+
+         #{$self}__content-left-para {
+            @include textformat;
+            padding-bottom: 5rem
+         }
+
+         #{$self}__sizes {
+            width: 60%;
+            margin-bottom: 6rem;
+            cursor: default;
+
+            display: flex;
+            justify-content: space-between;
+
+            & > div {
+               width: 3.5rem;
+               height: 3.5rem;
+               border-radius: 50px;
+               font-weight: 700;
+               font-size: 1.2rem;
+               color: var(--font-clr-lite);
+               background-color: var(--main-clr);
+
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               transition: all 0.1s ease-in;
+            }
+            & > div:hover {
+               color: var(--font-clr-lite);
+               background-color: rgb(240, 240, 240);
+            }
+            & > div.active {
+               font-weight: 600;
+               color: white;
+               background-color: var(--dark-clr);
+               // transition: all 0.1s ease-in;
+            }
+
+
+
+            // & > div:not(:last-child) {
+            //    margin-right: 2rem;
+            // }
+         }
+
+         #{$self}__cart-btn {
+
+         }
+      }
+   }
+
+   &__content-right {
+      padding-right: 7rem;
+
+      #{$self}__content-right-photo-box {
+         width: 8rem;
+         
+         &:not(:last-child) {
+            padding-bottom: 3rem;
+         }
+
+         & > img {
+            width: 100%;
+         }
+      }
+   }
+
+   &__big-photo {
+      flex: 1 1 35%;
+      height: 65rem;
+      position: relative;
+      overflow: hidden;
+
+      & > div {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         opacity: 0;
+         transition: opacity 0.3s linear;
+      }
+
+      & > div img {
+         width: 100%;
+         height: auto;
+      }
+
+      & > div.active {
+         opacity: 1;
+      }
+   }
+}

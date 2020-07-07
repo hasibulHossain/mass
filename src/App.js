@@ -1,27 +1,39 @@
 import React from 'react';
-import {Route, Switch, Redirect} from 'react-router-dom';
+import {Route, Switch, Redirect, useLocation} from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
 import './App.scss';
 
 import Layout from './Container/Layout/Layout';
 import HomePage from './pages/HomePage/HomePage';
 import ProductPage from './pages/ProductPage/ProductPage';
+import Product from './pages/Product/Product';
 
 function App() {
+  const location = useLocation();
   let route = (
-    <Switch>
-      <Route path="/productPage" exact component={ProductPage} />
-      <Route path="/" exact component={HomePage} />
+    <AnimatePresence exitBeforeEnter>
+      <Switch location={location} key={location.pathname}>
+        <Route path="/productPage" exact>
+          <ProductPage />
+        </Route>
+        <Route path="/product" exact>
+          <Product/>
+        </Route>
+        <Route path="/" exact>
+          <HomePage />
+        </Route>
 
-      <Redirect to="/" />
-    </Switch>
+        <Redirect to="/" />
+      </Switch>
+    </AnimatePresence>
   )
 
   return (
-    <div className="App">
+    <>
       <Layout>
         { route }
       </Layout>
-    </div>
+    </>
   );
 }
 

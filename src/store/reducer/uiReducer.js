@@ -1,7 +1,9 @@
 import * as actionType from '../actions/actionTypes';
 
 const initialState = {
-   isSideNavActive: false
+   isSideNavActive: false,
+   isModalOpen: false,
+   alert: false
 }
 
 const uiReducer = (state = initialState, action) => {
@@ -9,7 +11,29 @@ const uiReducer = (state = initialState, action) => {
       case actionType.SIDENAV_ACTIVE:
          return {
             ...state,
-            isSideNavActive: !state.isSideNavActive
+            isSideNavActive: true,
+            isModalOpen: true
+         }
+      case actionType.SIDENAV_HIDE:
+         return {
+            ...state,
+            isSideNavActive: false,
+            isModalOpen: false
+         }
+
+      case actionType.MODAL_OPEN:
+         return {
+            ...state,
+            isModalOpen: !state.isModalOpen,
+            isSideNavActive: false,
+            alert: false
+         }
+
+      case actionType.ALERT:
+         return {
+            ...state,
+            alert: true,
+            // isModalOpen: true
          }
    
       default:

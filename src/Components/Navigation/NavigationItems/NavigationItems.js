@@ -10,10 +10,9 @@ import { FaRegUser } from 'react-icons/fa';
 
 
 function NavigationItems(props) {
-   console.log(props.isActive)
    return (
       <ul className="navigation-items">
-         <li className="navigation-items__navigation-item" onClick={props.toggleSideNav}></li>
+         <li className="navigation-items__navigation-item" onClick={props.openSidenav}></li>
          <li className="navigation-items__navigation-item">mass</li>
          <li className="navigation-items__navigation-item">
             <FaRegUser />
@@ -30,7 +29,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
    return {
-      toggleSideNav: () => dispatch(action.toggleSideNav())
+      openSidenav: () => dispatch(action.openSideNav())
    }
 }
 
