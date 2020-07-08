@@ -1,0 +1,33 @@
+.cart {
+   margin-top: var(--section-margin-top);
+}
+
+.cart-items {
+   list-style: none;
+
+   &__header {
+      display: flex;
+      justify-content: space-around;
+      font-size: 1.2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 5rem;
+
+      & > div:not(:nth-child(1)) {
+         text-align: center;
+      }
+
+      & > div {
+         flex: 1;
+      }
+
+      & > div:nth-child(2) {
+         text-align: start;
+         flex: 3;
+      }
+
+      & > div:not(:last-child) {
+         margin-right: .5rem;
+      }
+   }
+}

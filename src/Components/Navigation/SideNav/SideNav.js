@@ -52,6 +52,11 @@ function SideNav(props) {
                      Products
                   </NavLink>
                </li>
+               <li onClick={props.closeSideNav} className="Sidenav__link">
+                  <NavLink to="/cart" exact>
+                     Cart
+                  </NavLink>
+               </li>
             </ul>
          </div>
       </div>

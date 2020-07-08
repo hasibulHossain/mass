@@ -7,6 +7,7 @@ import Layout from './Container/Layout/Layout';
 import HomePage from './pages/HomePage/HomePage';
 import ProductPage from './pages/ProductPage/ProductPage';
 import Product from './pages/Product/Product';
+import Cart from './pages/Cart/Cart';
 
 function App() {
   const location = useLocation();
@@ -19,11 +20,19 @@ function App() {
         <Route path="/product" exact>
           <Product/>
         </Route>
+        <Route path="/cart" exact>
+          <Cart/>
+        </Route>
         <Route path="/" exact>
           <HomePage />
         </Route>
 
-        <Redirect to="/" />
+        <Route path="/" >
+          <div>
+            not found
+          </div>
+        </Route>
+        {/* <Redirect to="/product" /> */}
       </Switch>
     </AnimatePresence>
   )

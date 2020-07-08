@@ -3,6 +3,7 @@ import * as actionType from '../actions/actionTypes';
 const initialState = {
    isSideNavActive: false,
    isModalOpen: false,
+   cartOpen: false,
    alert: false
 }
 
@@ -34,6 +35,12 @@ const uiReducer = (state = initialState, action) => {
             ...state,
             alert: true,
             // isModalOpen: true
+         }
+
+      case actionType.CART_OPEN:
+         return {
+            ...state,
+            cartOpen: !state.cartOpen
          }
    
       default:

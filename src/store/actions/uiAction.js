@@ -17,7 +17,11 @@ export const toggleModal = () => {
    }
 }
 
-
+export const toggleCart = () => {
+   return {
+      type: actionTypes.CART_OPEN
+   }
+}
 
 const alert = () => {
 

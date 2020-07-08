@@ -1,4 +1,5 @@
 import React from 'react'
+import './Tallbar.scss'
 
 import NavigationItems from '../NavigationItems/NavigationItems';
 

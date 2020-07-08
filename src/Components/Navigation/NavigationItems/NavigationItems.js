@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {connect} from 'react-redux';
 import './NavigationItems.scss';
 
@@ -12,9 +12,9 @@ import { FaRegUser } from 'react-icons/fa';
 function NavigationItems(props) {
    return (
       <ul className="navigation-items">
-         <li className="navigation-items__navigation-item" onClick={props.openSidenav}></li>
+         <li className="navigation-items__navigation-item" onMouseMove={props.openSidenav}></li>
          <li className="navigation-items__navigation-item">mass</li>
-         <li className="navigation-items__navigation-item">
+         <li onClick={props.openCart} className="navigation-items__navigation-item">
             <FaRegUser />
          </li>
       </ul>
@@ -29,7 +29,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
    return {
-      openSidenav: () => dispatch(action.openSideNav())
+      openSidenav: () => dispatch(action.openSideNav()),
+      openCart: () => dispatch(action.toggleCart())
    }
 }
 

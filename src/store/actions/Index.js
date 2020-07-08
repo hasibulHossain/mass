@@ -2,5 +2,6 @@ export {
    openSideNav,
    closeSideNav,
    toggleModal,
-   alertAsync
+   alertAsync,
+   toggleCart
 } from './uiAction';
