@@ -42,6 +42,12 @@ const uiReducer = (state = initialState, action) => {
             ...state,
             cartOpen: !state.cartOpen
          }
+
+      case actionType.CART_CLOSE:
+         return {
+            ...state,
+            cartOpen: false
+         }
    
       default:
          return state

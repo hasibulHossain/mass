@@ -2,15 +2,12 @@
    display: flex;
    justify-content: space-around;
    align-items: center;
-
-   &:not(:last-child) {
-      margin: 3rem 0rem;
-      border-bottom: 1px solid #dedede;
-      padding-bottom: 3rem;
-   }
+   margin: 3rem 0rem;
+   border-bottom: 1px solid #ececec;
+   padding-bottom: 3rem;
 
    &:last-child {
-      margin-bottom: 15rem;
+      // margin-bottom: 15rem;
    }
 
    &__item {

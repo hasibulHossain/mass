@@ -23,6 +23,12 @@ export const toggleCart = () => {
    }
 }
 
+export const CloseCart = () => {
+   return {
+      type: actionTypes.CART_CLOSE
+   }
+}
+
 const alert = () => {
 
    return {

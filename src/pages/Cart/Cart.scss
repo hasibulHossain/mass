@@ -1,5 +1,39 @@
 .cart {
+   $self: &;
    margin-top: var(--section-margin-top);
+
+   &__checkout-summery {
+      width: 30%;
+      margin-left: calc(100% - 30%);
+      margin-bottom: 4rem;
+
+      & > div {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 1.5rem 0rem;
+         border-bottom: 1px solid #ececec;
+         text-transform: capitalize;
+         font-weight: 500;
+      }
+
+      & > div p {
+         font-size: 1.2rem;
+         color: var(--font-clr-lite);
+      }
+
+      & > div p:last-child {
+         font-weight: 700;
+         color: var(--font-clr);
+      }
+   }
+
+   &__checkout-action {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10rem;
+   }
 }
 
 .cart-items {
