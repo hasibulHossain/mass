@@ -5,4 +5,14 @@ export {
    alertAsync,
    toggleCart,
    CloseCart
-} from './uiAction';
+} from './uiAction/uiAction';
+
+export {
+   productDetails,
+   addToCart,
+   removeFromCart
+} from './cartAction/cartAction';
+
+export {
+   productsInit
+} from './productsAction/productsAction';

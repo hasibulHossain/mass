@@ -1,5 +1,6 @@
-import React from 'react';
-import {Route, Switch, Redirect, useLocation} from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { connect } from 'react-redux'
+import {Route, Switch, useLocation} from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import './App.scss';
 
@@ -9,7 +10,13 @@ import ProductPage from './pages/ProductPage/ProductPage';
 import Product from './pages/Product/Product';
 import Cart from './pages/Cart/Cart';
 
-function App() {
+import * as action from './store/actions/Index';
+
+function App(props) {
+  useEffect(() => {
+    props.productsInit();
+  }, [])
+
   const location = useLocation();
   let route = (
     <AnimatePresence exitBeforeEnter>
@@ -46,4 +53,10 @@ function App() {
   );
 }
 
-export default App;
+const mapDispatchToProps = dispatch => {
+  return {
+    productsInit: () => dispatch(action.productsInit())
+  }
+}
+
+export default connect(null, mapDispatchToProps)(App);
