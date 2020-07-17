@@ -16,8 +16,7 @@ const cartReducer = (state = initialState, action) => {
       case actionTypes.ADD_TO_CART:
          //remove duplicate product from curt on the fly
          const filteredArr = state.onCart.concat(state.productDetails).reduce((acc, current) => {
-            const x = acc.find(product => product.id === current.id); // 
-            console.log(x)
+            const x = acc.find(product => product.id === current.id); //
             if (!x) {
               return acc.concat([current]);
             } else {

@@ -11,14 +11,14 @@ import CartDropdown from '../../Components/CartDropdown/CartDropdown';
 //action
 import * as action from '../../store/actions/Index';
 
-function Layout ({children, backDropOpen, cartOpen, alertAsync}) {
+function Layout ({children, backDropOpen, cartOpen, alertAsync, alertOccurred}) {
    useEffect(() => {
       alertAsync()
    }, [])
 
    return (
       <>
-         {/* {  alertOccurred && <Alert />} */}
+         {  alertOccurred && <Alert />}
          <BackDrop isOpen={backDropOpen} />
          <Toolbar />
          {cartOpen && <CartDropdown />}
@@ -49,7 +49,7 @@ function Alert() {
    return (
       <div className="alert">
          <p>
-            This is only for demo purpous. And this site not yet responsive, hope I'll do responsive latter.
+            this site is under development and not added responsive functionality yet.
          </p>
       </div>
    )

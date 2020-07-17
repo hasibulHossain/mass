@@ -16,3 +16,8 @@ export {
 export {
    productsInit
 } from './productsAction/productsAction';
+
+export {
+   signup,
+   login
+} from './auth/authAction';

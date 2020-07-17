@@ -50,7 +50,7 @@ function Cart({cartP}) {
                }
                </AnimatePresence>
                {
-                  cartP.length <= 0 && <p style={{fontSize: '3rem', textAlign: 'center', marginBottom: '3rem'}}>cart is empty. please choose product first</p>
+                  cartP.length <= 0 && <p style={{fontSize: '3rem', textAlign: 'center', marginBottom: '3rem'}}>cart is empty!</p>
                }
             </ul>
             <div className="cart__checkout-summery">

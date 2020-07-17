@@ -34,7 +34,7 @@ const uiReducer = (state = initialState, action) => {
          return {
             ...state,
             alert: true,
-            // isModalOpen: true
+            isModalOpen: true
          }
 
       case actionType.CART_OPEN:

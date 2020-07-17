@@ -9,6 +9,8 @@ import HomePage from './pages/HomePage/HomePage';
 import ProductPage from './pages/ProductPage/ProductPage';
 import Product from './pages/Product/Product';
 import Cart from './pages/Cart/Cart';
+import Login from './pages/Auth/Login/Login';
+import Signup from './pages/Auth/Signup/Signup';
 
 import * as action from './store/actions/Index';
 
@@ -30,6 +32,12 @@ function App(props) {
         <Route path="/cart" exact>
           <Cart/>
         </Route>
+        {/* <Route path="/login" exact>
+          <Login/>
+        </Route>
+        <Route path="/signup" exact>
+          <Signup/>
+        </Route> */}
         <Route path="/" exact>
           <HomePage />
         </Route>

@@ -40,6 +40,6 @@ export const alertAsync = () => {
    return dispatch => {
       setTimeout(() => {
          dispatch(alert())
-      }, 5000);
+      }, 3000);
    }
 }
