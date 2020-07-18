@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/hasibulHossain/mass/static/css/main.d773d689.chunk.css",
-    "main.js": "/hasibulHossain/mass/static/js/main.d9d18bdd.chunk.js",
-    "main.js.map": "/hasibulHossain/mass/static/js/main.d9d18bdd.chunk.js.map",
+    "main.js": "/hasibulHossain/mass/static/js/main.09931acf.chunk.js",
+    "main.js.map": "/hasibulHossain/mass/static/js/main.09931acf.chunk.js.map",
     "runtime-main.js": "/hasibulHossain/mass/static/js/runtime-main.1900d758.js",
     "runtime-main.js.map": "/hasibulHossain/mass/static/js/runtime-main.1900d758.js.map",
-    "static/js/2.6c293cb1.chunk.js": "/hasibulHossain/mass/static/js/2.6c293cb1.chunk.js",
-    "static/js/2.6c293cb1.chunk.js.map": "/hasibulHossain/mass/static/js/2.6c293cb1.chunk.js.map",
+    "static/js/2.385012b2.chunk.js": "/hasibulHossain/mass/static/js/2.385012b2.chunk.js",
+    "static/js/2.385012b2.chunk.js.map": "/hasibulHossain/mass/static/js/2.385012b2.chunk.js.map",
     "index.html": "/hasibulHossain/mass/index.html",
-    "precache-manifest.14790602f4e03125a8c9bb4f8c1badc0.js": "/hasibulHossain/mass/precache-manifest.14790602f4e03125a8c9bb4f8c1badc0.js",
+    "precache-manifest.51f1279047383891fdef74d13d003d19.js": "/hasibulHossain/mass/precache-manifest.51f1279047383891fdef74d13d003d19.js",
     "service-worker.js": "/hasibulHossain/mass/service-worker.js",
     "static/css/main.d773d689.chunk.css.map": "/hasibulHossain/mass/static/css/main.d773d689.chunk.css.map",
-    "static/js/2.6c293cb1.chunk.js.LICENSE.txt": "/hasibulHossain/mass/static/js/2.6c293cb1.chunk.js.LICENSE.txt",
+    "static/js/2.385012b2.chunk.js.LICENSE.txt": "/hasibulHossain/mass/static/js/2.385012b2.chunk.js.LICENSE.txt",
     "static/media/0085011706_6_1_1.jpg": "/hasibulHossain/mass/static/media/0085011706_6_1_1.00101440.jpg",
     "static/media/0085011706_6_4_1 - Copy.jpg": "/hasibulHossain/mass/static/media/0085011706_6_4_1 - Copy.eb779ba1.jpg",
     "static/media/1509002802_1_1_1.jpg": "/hasibulHossain/mass/static/media/1509002802_1_1_1.215891fb.jpg",
@@ -60,8 +60,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.1900d758.js",
-    "static/js/2.6c293cb1.chunk.js",
+    "static/js/2.385012b2.chunk.js",
     "static/css/main.d773d689.chunk.css",
-    "static/js/main.d9d18bdd.chunk.js"
+    "static/js/main.09931acf.chunk.js"
   ]
 }
